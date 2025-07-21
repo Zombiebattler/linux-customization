@@ -35,4 +35,6 @@ curl -fsSL "$ZHS_CONFIG_URL" -o "$HOME/.zshrc"
 
 echo ""
 echo "✅ Done"
-echo "⚠️ First, configure the < Meslo > font in your terminal, then run < source .zshrc. >"
+echo "⚠️ First, configure the <Meslo Nerd Font> font in your terminal, then run <source .zshrc>"
+echo ""
+echo "by by :)"
