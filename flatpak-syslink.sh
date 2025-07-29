@@ -11,9 +11,9 @@ for BIN in "$EXPORT_DIR"/*; do
   LINK_PATH="$TARGET_DIR/$LINK_NAME"
 
   if [ -L "$LINK_PATH" ] && [ "$(readlink -f "$LINK_PATH")" = "$BIN" ]; then
-    echo "Symlink for $LINK_NAME already exists, skip."
+    echo "✅ Symlink for $LINK_NAME already exists, skip."
   elif [ -e "$LINK_PATH" ]; then
-    echo "⚠️  $LINK_PATH already exists and is not a suitable link, skip.."
+    echo "⚠️  $LINK_PATH is not a suitable link, skip.."
   else
     echo "🔗 Create symlink: $LINK_PATH → $BIN"
     sudo ln -s "$BIN" "$LINK_PATH"
