@@ -6,7 +6,7 @@ ZHS_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customizat
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install git zsh nala unzip -y
+sudo apt install git zsh nala unzip cowsay -y
 
 
 # Nerdfonts
