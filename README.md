@@ -1,20 +1,20 @@
 # A collection of scripts and configurations that I use
 
-# install-zsh.sh 
+## Install-zsh.sh 
 
 A simple Bash script for installing and configuring ZSH on Debian and Debian-based Linux distros.
 
-## Packages
+### Packages
 
 The following tools will be installed:
 
 - `git`
 - `zsh`
-- `nala` – moderne APT-Alternative
+- `nala`
 - `unzip`
-- `cowsay` – für etwas Spaß im Terminal
+- `cowsay`
 
-## ZSH Extensions & Theme
+### ZSH Extensions & Theme
 
 In addition, the script sets up:
 
@@ -23,7 +23,7 @@ In addition, the script sets up:
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k)
 
-## Installation
+### Installation
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Zombiebattler/linux-customization/main/install-zsh.sh -o install-zsh.sh
