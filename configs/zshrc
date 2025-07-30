@@ -17,15 +17,5 @@ alias home='cd ~'
 alias dig='dig +short'
 alias ping='ping -c 3'
 
-function apt() {
-    case "$1" in
-        update|upgrade|autoremove|install)
-            nala "$@"
-            ;;
-        *)
-            command apt "$@"
-            ;;
-    esac
-}
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
