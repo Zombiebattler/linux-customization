@@ -32,8 +32,7 @@ chmod +x install-zsh.sh
 
 ./install-zsh.sh
 ```
-#
-#
+
 
 ## update_zshrc.sh
 
@@ -50,10 +49,6 @@ chmod +x update_zshrc.sh
 You can either update manually or create a cron job.
 
 
-
-#
-#
-
 ## flatpak-syslink.sh
 
 This Bash script creates symbolic links from Flatpak applications to /usr/bin so that they can be found and launched in dmenu (under i3 or other minimalist window managers).
@@ -66,8 +61,6 @@ curl -fsSL https://raw.githubusercontent.com/Zombiebattler/linux-customization/m
 chmod +x flatpak-syslink.sh
 ```
 
-#
-#
 
 ## software / tools.sh (BETA)
 
