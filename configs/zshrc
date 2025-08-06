@@ -16,7 +16,7 @@ alias home='cd ~'
 alias dig='dig +short'
 alias ping='ping -c 3'
 alias traceroute='mtr'
-alias mtr='mtr -t'
+alias mtr='mtr -t -b'
 
 clear
 date "+%H:%M" | cowsay
