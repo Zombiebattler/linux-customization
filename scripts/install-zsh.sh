@@ -1,6 +1,6 @@
 #!bin/bash
 
-ZHS_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/zshrc"
+ZSH_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/zshrc"
 
 # standard
 
@@ -28,7 +28,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM}/themes/powerlevel10k"
 
 cp "$HOME/.zshrc" "$HOME/.zshrc.backup"
-curl -fsSL "$ZHS_CONFIG_URL" -o "$HOME/.zshrc"
+curl -fsSL "$ZSH_CONFIG_URL" -o "$HOME/.zshrc"
 
 
 # Done.
