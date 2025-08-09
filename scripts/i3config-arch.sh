@@ -6,6 +6,7 @@ I3_Windows_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customizat
 I3_LOCK_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3_lock.conf"
 I3_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/config"
 I3_STATUS_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3status.conf"
+ZSH_THEME_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/themes/my.zsh-theme"
 
 echo -e "\nUpdate System & Installing Software\n"
 
@@ -25,6 +26,7 @@ yay i3lock-color --noconfirm
 echo -e "\nInstalling Oh-my-ZSH\n"
 
 echo -e "\n\033[31m!!! If you are redirected to the ZSH shell, simply type 'exit' to continue the installation. !!!\033[0m\n"
+sleept 3
 
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -32,6 +34,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM}/plugin
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting"
 cp "$HOME/.zshrc" "$HOME/.zshrc.backup"
 curl -fsSL "$ZSH_CONFIG_URL" -o "$HOME/.zshrc"
+
+curl -fsSL "$ZSH_THEME_URL" -o "$HOME/.oh-my-zsh/theme/my.zsh-theme"
 
 
 
