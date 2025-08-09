@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # variables
-ZSH_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/zshrc"
+ZSH_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/zshrc_arch"
 I3_Windows_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3_windows.conf"
-I3_LOCK_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3_lock.conf"
+I3_LOCK_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3_lock"
 I3_CONFIG_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/config"
 I3_STATUS_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/configs/i3status.conf"
 ZSH_THEME_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customization/refs/heads/main/themes/my.zsh-theme"
