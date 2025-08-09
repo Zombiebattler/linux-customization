@@ -73,3 +73,13 @@ cat > "$HOME/.config/picom/picom.conf" <<EOF
 corner-radius = 5;
 backend = "glx";
 EOF
+
+
+
+echo -e "\nConfigure gtk\n"
+
+mkdir -p "$HOME/.config/picom"
+cat > "$HOME/.config/gtk-3.0/settings.ini" <<EOF
+[Settings]
+gtk-application-prefer-dark-theme=1
+EOF
