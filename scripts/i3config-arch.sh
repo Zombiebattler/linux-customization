@@ -10,7 +10,7 @@ ZSH_THEME_URL="https://raw.githubusercontent.com/Zombiebattler/linux-customizati
 
 echo -e "\nUpdate System & Installing Software\n"
 
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 sudo pacman -S cowsay zsh feh picom kitty mtr curl ttf-droid --noconfirm
 sudo pacman -S --needed base-devel git --noconfirm
 rm -rf yay
@@ -19,14 +19,14 @@ cd yay
 makepkg -si --noconfirm
 cd ..
 rm -rf yay
-yay i3lock-color --noconfirm
+yay -S i3lock-color --noconfirm
 
 
 
 echo -e "\nInstalling Oh-my-ZSH\n"
 
 echo -e "\n\033[31m!!! If you are redirected to the ZSH shell, simply type 'exit' to continue the installation. !!!\033[0m\n"
-sleept 3
+sleep 3
 
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -34,6 +34,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM}/plugin
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting"
 cp "$HOME/.zshrc" "$HOME/.zshrc.backup"
 curl -fsSL "$ZSH_CONFIG_URL" -o "$HOME/.zshrc"
+
 
 curl -fsSL "$ZSH_THEME_URL" -o "$HOME/.oh-my-zsh/theme/my.zsh-theme"
 
@@ -78,7 +79,7 @@ EOF
 
 echo -e "\nConfigure gtk\n"
 
-mkdir -p "$HOME/.config/picom"
+mkdir -p "$HOME/.config/gtk-3.0"
 cat > "$HOME/.config/gtk-3.0/settings.ini" <<EOF
 [Settings]
 gtk-application-prefer-dark-theme=1
