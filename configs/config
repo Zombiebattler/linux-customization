@@ -110,4 +110,6 @@ bindsym $mod+Return exec kitty
 exec_always feh --bg-fill ~/Downloads/wall.jpg
 exec_always picom -f
 
+default_border pixel 1
+
 include ~/.config/i3/i3_windows.conf
